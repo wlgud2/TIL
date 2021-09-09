@@ -1,3 +1,3 @@
 # Today I Learned
-- markdown
-- git
+- (markdown)[www.google.com]
+- (git)[www.google.com]
