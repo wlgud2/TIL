@@ -57,8 +57,10 @@ README.md(): 프로젝트 설명 파일 꼭 형성해주기
 
   - Repository	커밋이 저장되는 곳. 특정 디렉토리를 **버전 관리**하는 저장소
 
-- **git init**	로컬 저장소를 생성하는 명령어
+- **git init**	로컬 저장소(local repository)를 생성하는 명령어(.git 생성)
 
+  폴더에서 우클릭->git bash here -> git init
+  
   git init Initialized empty Git repository in ~ //~에 빈 저장소를 생성하였다
 
 ![캡처2](git.assets/%EC%BA%A1%EC%B2%982.PNG)
@@ -131,7 +133,9 @@ https://~: 내 remote repo 주소
 
   ```(HEAD -> master, origin/master)```<<둘 다 커밋 저장 됐을 경우 log
 
+- Remote repository 를 삭제해도 local에는 파일이 남아 있으나, local에서 작업 후, push 할 수 없음
 
+  local에서 파일 삭제해도 remore repo에는 남아있다
 
 - **git clone {remote_repo}**	remote repo를 local로 복사
 
@@ -149,7 +153,21 @@ https://~: 내 remote repo 주소
 
   - **클론된 것과는 따로 git remote add origin~해서 연결할 필요 없다**
 
+  - local repo 생성하는 init 필요 없다
+  
   - remote repo와 local repo가 같다 : **분산** 버전관리
+
+###### 전반적인 과정
+
+*git add -> git commit -m -> git push origin master*
+
+###### 쉬운 commit, push
+
+![캡처](git.assets/%EC%BA%A1%EC%B2%98-16311763370053.PNG)
+
+*메세지 창에 commit 메세지 적고 체크*
+
+*점 세개 눌러서 push*
 
 ---
 
@@ -158,6 +176,46 @@ https://~: 내 remote repo 주소
 > 오늘 배운 내용을 정리해요
 
 - 매일 내가 배운 것을 마크다운으로 정리해서 문서화 하는 것
-
 - 1일 1 커밋! ***잔디심기***
 
+---
+
+### 알고리즘 Repo 만들기
+
+---
+
+### Github Profile 만들기
+
+README.md 파일 생성하고 자기소개 작성![캡처](git.assets/%EC%BA%A1%EC%B2%98-16311717439241.PNG)
+
+[깃허브 이모지](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md)
+
+[깃허브 프로필](https://github.com/abhisheknaiidu/awesome-github-profile-readme)
+
+[방문자 수](https://hits.seeyoufarm.com/)
+
+[스탯](https://github.com/anuraghazra/github-readme-stats)
+
+​	github stats cards ->복사, md에 붙여넣기, username 바꾸기
+
+---
+
+### Github Pages
+
+> 깃허브에서 제공하는 무료 웹 호스팅 서비스
+
+- 무료로 홈페이지를 만들 수 있다
+
+- github repo와 직접적으로 연동되어 있어서 push 하면 즉각 반영
+
+- html파일을 저장한 git을 repo로 push
+
+  -> settings->pages
+
+![dd](git.assets/dd-16311758108802.PNG)
+
+[무료 템플릿](https://startbootstrap.com/themes/portfolio-resume)
+
+받은 파일 안의 내용을 모두 복사해서 local repo 폴더에 붙여넣기
+
+add commit push 후 다시 git repo- settings-pages에서 홈페이지 확인
