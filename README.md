@@ -1,3 +1,3 @@
 # Today I Learned
-- (markdown)[www.google.com]
-- (git)[www.google.com]
+- (markdown)[https://github.com/wlgud2/TIL/blob/master/markdown/markdown.md]
+- (git)[https://github.com/wlgud2/TIL/blob/master/git/git.md]
