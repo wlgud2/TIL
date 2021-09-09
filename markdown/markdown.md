@@ -42,7 +42,7 @@
 
 #### 링크
 
-- (string)[www.google.com] 링크: string은 보여지는 부분, url은 연결할 곳
+- [string]\(링크주소) 링크: string은 보여지는 부분, url은 연결할 곳
 
 - ![string]() : 이미지 삽입
 
