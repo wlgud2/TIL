@@ -60,6 +60,16 @@
 
   ​     *hard 외에도 soft, mixed가 있다*
 
+  - hard: working directory, staging area, repository를 과거의 특정 커밋과 똑같이 만든다
+
+  - mixed: staging area를 과거의 특정 커밋과 똑같이 만든다
+
+    ​			 working directory는 작업 중이던 그대로이다. 안바뀜)
+
+  - soft: repository만 과거의 특정 커밋과 똑같이 만든다
+
+    ​	 	HEAD가 과거의 특정 커밋을 가리키도록 한다
+
 - **git remote rm origin**   add origin한 걸 지울 수 있다(연결 끊기)
 
 - **touch .gitignore**	원하지 않는 파일 제외하기
@@ -169,21 +179,21 @@ Pull request에서  commits 온 것을 open -> close로 바꿔준다(승인)
 
 		###### merge commit 예시
 
-master에서 readme, master02 형성 후 test branch 형성
+master에서 readme에 master01 형성 후 add commit, test branch 형성
 
 test branch(git checkout)에서 test.txt 파일 형성(touch test.txt)
 
-test.txt에 test01, test02형성 후 add commit(test branch가 createtest02 가리킴)
+test.txt에 test01형성 후 add commit(test branch가 createtest01 가리킴)
 
 master branch(git checkout)에서 test.txt 파일 형성(touch test.txt)
 
 test.txt에 mastertest01 형성 후 add commit(master branch가 createmastertest01 가리킴)
 
-merge test(master와 test branch 병합) -> 같은 이름의 파일(test.txt)을 갖고 있기 때문에 conflict 발생-> 최종 합본으로 수정 후 add commit(merge commit)
+git merge test(master와 test branch 병합) -> 같은 이름의 파일(test.txt)을 갖고 있기 때문에 conflict 발생-> 최종 합본으로 수정 후 add commit(merge commit)
 
-![ee](git_adv.assets/ee.PNG)
+![찐](git_adv.assets/%EC%B0%90.PNG)
 
-​		
+
 
 #### branch 관련 명령어
 
@@ -197,8 +207,6 @@ merge test(master와 test branch 병합) -> 같은 이름의 파일(test.txt)을
 ***git log --graph***	commit log를 보기 쉽게
 
 ***git log --graph --oneline***	한줄로 나타내서 더 보기 쉽게
-
-![image-20210910150913689](git_adv.assets/image-20210910150913689.png)
 
 
 
@@ -226,15 +234,15 @@ merge test(master와 test branch 병합) -> 같은 이름의 파일(test.txt)을
 
 ### OPEN SOURCE
 
-contributor: fork할 수 있다 ()
+- contributor: fork할 수 있다 (repo를 fork한 이용자가 merge할 수 없다)
 
-​	*collaborator는 remote를 동등하게 공유하기 때문에, 이용자도 merge할 수 있다
+​	*collaborator는 remote를 동등하게 공유하기 때문에, 이용자도 merge할 수 있다*
 
-: 타인의 remote를 내 remote로 fork -> 내 remote를 내 local로 clone
+
+
+- 타인의 remote를 내 remote로 fork -> 내 remote를 내 local로 clone
 
 => clone한 관계에서는 push 되지만, 내 local 에서 타인의 remote(fork했던)로는 push할 수 없다
 
 => local에서 new branch 생성, 작업 후 내 remote로 branch를 올리고 상대 remote로 pr을 보낸다
-
-bash에서 `$ code .` 를 타이핑하면 현재 경로를 `VScode`로 열 수 있다.
 
