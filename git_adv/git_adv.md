@@ -1,6 +1,6 @@
 # GIT ADVACED
 
-#### git pull
+### git pull
 
 > a, b가 하나의 repo를 쓸 경우, b가 변경해서 push로 repo로 올려놓은 것을 pull을 통해 a의 local로 가져올 수 있다
 
@@ -12,29 +12,28 @@
 
 2. class에서
 
-   **git init**	README 끼리 충돌일어날 수 있다-> clone으로
+- **git init**	README 끼리 충돌일어날 수 있다-> clone으로
 
-   **git clone** *remote repo 주소*	로 클론 후 작업하고 push
+- **git clone** *remote repo 주소*	로 클론 후 작업하고 push
+  - 바탕화면에서 bash 열어서 clone하거나
 
-   - 바탕화면에서 bash 열어서 clone하거나
+  - 이미 만든 폴더를 쓸 땐, remote repo 주소 뒤에 . 찍기(현재 위치에 clone)
 
-   - 이미 만든 폴더를 쓸 땐, remote repo 주소 뒤에 . 찍기(현재 위치에 clone이라는 뜻) https://github.com/wlgud2/class_repo.git . <<
+     https://github.com/wlgud2/class_repo.git . <<
 
 3. 다시 home으로 와서
 
    remote에 있는 변경사항(class에서 한)을 home의 local로 pull
 
-   **git pull origin master**
+- **git pull origin master**
 
-   ​		*origin**의** master branch를 당겨오기*
+  : origin**의** master branch를 당겨오기
 
-   ​	*push origin master : origin**으로** local의 master branch를 보내기*
+  *push origin master : origin**으로** local의 master branch를 보내기*
 
-   -> pull받기 전에 작업 후 pull하면 conflict 발생
-
-   ​		->파일에 색 칠해진 부분 지우고 파일이 가져야 할 최종 모습으로 수정
-
-   -> pull 받은 후 작업, add, commit, push
+  - pull받기 전에 작업 후 pull하면 conflict 발생
+  - 파일에 색 칠해진 부분 지우고 파일이 가져야 할 최종 모습으로 수정
+  - pull 받은 후 작업, add, commit, push
 
 - pull해서 최신 상태인지 확인 -> Already up to date.(remote와 같은 상태이다)
 
@@ -74,19 +73,19 @@
 
 - **touch .gitignore**	원하지 않는 파일 제외하기
 
-  생성된 .gitignore 파일에 파일/폴더명 적으면 add, commit에서 제외된다
+  : 생성된 .gitignore 파일에 파일/폴더명 적으면 add, commit에서 제외된다
 
   <img src="git_adv.assets/44.PNG" alt="44" style="zoom:60%;" />
 
-  img01.png 	--특정 파일 제외
+  - img01.png 	 -- 특정 파일 제외
 
-  data/			   --특정 폴더 내의 모든 파일
+  - data/		        -- 특정 폴더 내의 모든 파일
 
-  *.txt			     --특정 확장자 모두
+  - *.txt			     -- 특정 확장자 모두
 
-  !test01.txt       --모든 확장자 뺐지만, 특정 파일은 예외
+  - !test01.txt       -- 모든 확장자 뺐지만, 특정 파일은 예외
 
-  [gitignore 생성 사이트](https://gitignore.io/) 깃 파일이 돌아갈 운영 체재나 언어 적기(windows, macOS, java), 전체 복사 후 내 gitignore 파일에 붙여넣기
+  - [gitignore 생성 사이트](https://gitignore.io/) 깃 파일이 돌아갈 운영 체재나 언어 적기(windows, macOS, java), 전체 복사 후 내 gitignore 파일에 붙여넣기
 
 ---
 
@@ -177,7 +176,7 @@ Pull request에서  commits 온 것을 open -> close로 바꿔준다(승인)
 
 ​																*(두 branch가 같은 commit을 가리키게 된다)*
 
-		###### merge commit 예시
+#### merge commit 예시
 
 master에서 readme에 master01 형성 후 add commit, test branch 형성
 
