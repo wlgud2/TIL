@@ -36,11 +36,28 @@
 ##### 간단한 Unix/Linux 명령어
 
 - 현재 위치의 폴더, 파일 목록 보기	ls
+
 - 현재 위치 이동하기	cd <path> / cd .. <이전 위치로 돌아가기
+
 - ~ <<home 디렉토리(로컬디스크c, 사용자, mulan)를 나타낸다
+
 - 폴더 생성하기	mkdir cli_test
+
 - 파일 생성하기	touch test.txt
+
 - 파일 삭제	rm test.txt	// 폴더 삭제	rm -r cli_test
+
+- 상대경로
+
+  .. : 상위 위치
+
+  . : 현재 위치
+
+- 절대경로
+
+  C:\Users\mulan\OneDrive\바탕 화면\TIL
+
+- bash에서 `$ code .` 를 타이핑하면 현재 경로를 `VScode`로 열 수 있다.
 
 ![캡처3](git.assets/%EC%BA%A1%EC%B2%983.PNG)
 
@@ -77,7 +94,7 @@ README.md(): 프로젝트 설명 파일 꼭 형성해주기
 
 - **git add** BasicCar.py README.md // git add . <<모든 파일을 staging area로 올림
 
-- **git config** --*global* user.email "akddnfsla@gmail.com"
+- **git config** --*global* user.email "akddnfsla@gmail.com"	//처음엔만 하는 것
 
   *git config --global user.name "깃허브아이디"*
 
@@ -94,9 +111,9 @@ README.md(): 프로젝트 설명 파일 꼭 형성해주기
 
 - working tree clean 		이전 커밋된 결과에서 변경된 사항 없음
 - **git log**   git의 commit history 보기	*빠져나가기: q*
-- **git diff**  두 commit 간 차이 보기
+- **git diff**  {commit주소1} {commit 주소2} 두 commit 간 차이 보기
 
-
+<img src="git.assets/eee.PNG" alt="eee" style="zoom:50%;" />
 
 #### Remote Repository
 
@@ -160,6 +177,18 @@ https://~: 내 remote repo 주소
 ###### 전반적인 과정
 
 *git add -> git commit -m -> git push origin master*
+
+###### local 먼저 생성 후 remote와 연결하는 과정
+
+폴더 생성-> git init(local repo 형성) -> add, commit -> remote repo 생성
+
+-> local repo bash에서 git remote add origin *remote repo 주소*
+
+-> git push -u origin master
+
+###### remote 먼저 생성 후 local로 clone하는 과정
+
+remote repo 생성-> 바탕화면 bash here-> git clone *remote repo 주소*
 
 ###### 쉬운 commit, push
 
