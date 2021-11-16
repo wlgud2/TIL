@@ -196,6 +196,7 @@ git merge test(master와 test branch 병합) -> 같은 이름의 파일(test.txt
 
 #### branch 관련 명령어
 
+- git remote update	remote repo의 최신 정보 가져옴(새로 생성된 브랜치들)
 - git branch	branch 목록. * 붙어 있는 것이 현재 branch
 - git branch~	~라는 이름의 branch 생성
 - git checkout ~	~branch로 이동
