@@ -30,3 +30,61 @@ HTML의 새로운 버전으로, 클라이언트와 서버간의 통신이 가능
 `Geo-Location`: GPS없이도 단말기의 지리적인 위치 정보를 제공
 
 `SEMANTICS` : 웹 자료에 의미를 부여하여 사용자 의도에 맞는 맞춤형 검색 제공
+
+
+
+### Syntax(구문)
+
+```html
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML5 Document type</title>
+    </head>
+    <body>
+        <!-- 콘텐츠 영역 -->
+    </body>
+</html>
+```
+
+1. DOCTYPE
+
+   최상단에 `DOCTYPE`을 작성해야하며 개행문자(enter)도 들어가서는 안됨
+
+   `DOCTYPE`은 *HTML*과 *XHTML* 두가지가 있다
+
+2. ENCODING
+
+   ###### 기존의 문서 타입에서 사용하던 Charset. 즉, encoding
+
+  ```html
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  ```
+
+###### 		 HTML5의 Charset
+
+```html
+<meta charset="UTF-8">
+```
+
+3. 그래픽 언어의 사용
+
+   수식기술언어 `MathML`, 그래픽언어 `SVG` 등을 사용할 수 있다
+
+ ```html
+ <!doctype html> 
+ <html lang="ko">
+     <head>
+         <meta charset="UTF-8">
+         <title>Document</title> 
+     </head>
+     <body>
+         <div> 
+             <svg> <circle r="50" cx="50" cy="50" fill="green"/> </svg>
+         </div> 
+     </body>
+ </html>
+ ```
+
+   
