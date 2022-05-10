@@ -5,3 +5,4 @@
 
 - [python](https://github.com/wlgud2/TIL/blob/master/python/%ED%8C%8C%EC%9D%B4%EC%8D%AC.md)
 
+- [html5](https://github.com/wlgud2/TIL/blob/master/html5/HTML5.md)
